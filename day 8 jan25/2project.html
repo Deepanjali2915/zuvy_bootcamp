@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Task 2</title>
+    <style>
+        /* Write your CSS here*/
+        body {
+            font-family: 'Sono', sans-serif;
+            /* border: 1px solid black; */
+            Font-size: 16px;
+        }
+
+        .main {
+            /* width: 580px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+            flex-wrap: wrap;
+            /* border: 1px solid blue; */
+        }
+
+        .community {
+            width: 600px;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            padding: 20px;
+            /* border: 1px solid darkgreen; */
+
+        }
+
+        .monthly-why {
+            height: 100%;
+            color: white;
+            justify-content: center;
+            align-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            /* border: 1px solid darkorchid; */
+        }
+
+        .Monthly {
+            width: 250px;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            background-color: hsl(179, 62%, 43%);
+            padding: 10px;
+            padding-right: 40px; 
+        }
+
+        .why {
+            width: 250px;
+            /* border: 1px solid red; */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            background-color: rgb(17, 160, 148);
+            flex-wrap: wrap;
+            padding: 10px;
+            padding-right: 40px;
+            padding-left: 10px;
+        }
+
+        .community h3 {
+            color: hsl(179, 62%, 43%);
+        }
+
+        .community h4 {
+            color: hsl(71, 73%, 54%);
+        }
+
+        .community p {
+            color: lightgray;
+        }
+
+        span {
+            Font-size: 24px;
+            color: white;
+        }
+
+        .Monthly h4 {
+            color: lightgray;
+        }
+
+        button{
+            height: 40px;
+            border-radius: 3px;
+            background-color: hsl(71, 73%, 54%);
+
+
+        }    
+
+        @media  (max-width: 375px) {
+            .community{
+            width: 260px;}
+
+            .Monthly{
+            height: 250px;
+            }
+
+            .why{
+            height: 250px;
+
+      }
+    }
+
+    </style>
+</head>
+
+<body>
+    <!-- Write your own HTML only content is provided -->
+    <div class="main">
+        <div class="community">
+            <h3>Join our community</h3>
+            <h4>30-day, hassle-free money back guarantee</h4>
+
+            <p>Gain access to our full library of tutorials along with expert code reviews.
+                Perfect for any developers who are serious about honing their skills.</p>
+
+        </div>
+        <div class="monthly-why">
+            <div class="Monthly">
+                <h3>Monthly Subscription</h3>
+
+                <h4> <span>&dollar;29</span> per month</h4>
+
+                <p>Full access for less than &dollar;1 a day</p>
+
+                <button>Sing Up</button> 
+            </div>
+            <div class="why">
+                <h3>Why Us</h3>
+                <p>Tutorials by industry experts
+                    Peer &amp; expert code review
+                    Coding exercises
+                    Access to our GitHub repos
+                    Community forum
+                    Flashcard decks
+                    New videos every week
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
